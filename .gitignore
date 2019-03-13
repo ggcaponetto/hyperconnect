@@ -52,3 +52,6 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+
+Assets/chat-example/node_modules/
+Assets/chat-example/build
