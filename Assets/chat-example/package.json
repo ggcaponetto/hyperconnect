@@ -1,0 +1,19 @@
+{
+  "name": "socket-chat-example",
+  "version": "0.0.1",
+  "description": "my first socket.io app",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "build-async": "npx pkg ./src/hyperconnect-async.js -c package.json -o ./build/hyperconnect-async.exe",
+    "build-sync": "npx pkg ./src/hyperconnect-sync.js -c package.json -o ./build/hyperconnect-sync.exe",
+    "build-main": "npx pkg ./src/hyperconnect.js -c package.json -o ./build/hyperconnect.exe",
+    "build": "npm run build-async && npm run build-sync && npm run build-main"
+  },
+  "pkg": {
+    "assets": "src"
+  }
+}
