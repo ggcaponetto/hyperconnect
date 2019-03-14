@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "node index.js",
+    "start-hc-client": "node src/hc-client.js",
     "build-async": "npx pkg ./src/hyperconnect-async.js -c package.json -o ./build/hyperconnect-async.exe",
     "build-sync": "npx pkg ./src/hyperconnect-sync.js -c package.json -o ./build/hyperconnect-sync.exe",
     "build-main": "npx pkg ./src/hyperconnect.js -c package.json -o ./build/hyperconnect.exe",

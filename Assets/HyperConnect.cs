@@ -36,7 +36,7 @@ public class HyperConnect : MonoBehaviour
             myProcess.StartInfo.UseShellExecute = false;
             myProcess.StartInfo.RedirectStandardOutput = true;
             myProcess.StartInfo.RedirectStandardError = true;
-            myProcess.StartInfo.FileName = "C:\\Users\\ggcap\\IdeaProjects\\chat-example\\build\\hyperconnect.exe";
+            myProcess.StartInfo.FileName = "C:\\Users\\Giuseppe\\intellij-workspace\\hyperconnect\\Assets\\chat-example\\build\\hyperconnect.exe";
             myProcess.EnableRaisingEvents = true;
             myProcess.OutputDataReceived += new DataReceivedEventHandler(OutputHandler);
             myProcess.ErrorDataReceived += new DataReceivedEventHandler(OutputHandler);
