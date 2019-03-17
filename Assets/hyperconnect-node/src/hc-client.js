@@ -1,10 +1,11 @@
+const os = require('os');
 const readline = require('readline').createInterface({
 	input: process.stdin,
 	output: process.stdout
 });
 
 let readInput = function readInput(done){
-	readline.question(`Waiting for Unity to send a command.`, (command) => {
+	readline.question(`Waiting for Unity to send a command.${os.EOL}`, (command) => {
 		console.log(`Unty sent: ${command}`);
 		done();
 		readInput(done)

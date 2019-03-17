@@ -56,3 +56,4 @@ crashlytics-build.properties
 Assets/hyperconnect-node/node_modules/
 Assets/hyperconnect-node/build
 .idea
+**/node_modules/**

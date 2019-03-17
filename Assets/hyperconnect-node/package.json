@@ -3,16 +3,19 @@
   "version": "0.0.1",
   "description": "my first socket.io app",
   "dependencies": {
+    "electron": "^4.1.0",
     "express": "^4.15.2",
     "socket.io": "^1.7.3"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node src/start-electron.js",
+    "start-electron": "node .\\node_modules\\electron\\cli.js src/electron.js",
     "start-hc-client": "node src/hc-client.js",
     "build-async": "npx pkg ./src/hyperconnect-async.js -c package.json -o ./build/hyperconnect-async.exe",
     "build-sync": "npx pkg ./src/hyperconnect-sync.js -c package.json -o ./build/hyperconnect-sync.exe",
     "build-main": "npx pkg ./src/hyperconnect.js -c package.json -o ./build/hyperconnect.exe",
     "build-hc-client": "npx pkg ./src/hc-client.js -c package.json -o ./build/hc-client.exe",
+    "build-electron": "npx pkg ./src/electron.js -c package.json -o ./build/electron.exe",
     "build": "npm run build-async && npm run build-sync && npm run build-main && npm run build-hc-client",
     "nodemon": "npx nodemon --watch src --exec \"npm run build\""
   },
@@ -20,6 +23,7 @@
     "assets": "src"
   },
   "devDependencies": {
+    "electron-builder": "^20.39.0",
     "nodemon": "^1.18.10"
   }
 }
